@@ -1,0 +1,468 @@
+/* start global */
+
+* {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {}
+
+.container {
+    
+    width: 1200px;
+    margin: auto
+}
+
+ul {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+a {text-decoration: none}
+
+.nav,
+.header,
+.serv,
+.our-team,
+.testim,
+.our-project,
+.footer {min-width: 1200px}
+
+/* end global */
+
+/* start navbar */
+
+.nav {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 2
+}
+
+.nav .brand {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bolder;
+    color: #fff
+}
+
+.nav .brand span{color: #1abc9c;}
+
+
+.nav .links {
+    
+    float: left;
+    width: 50%;
+    margin-top: 25px
+}
+
+.nav .links li {
+   
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    font-weight: 700
+}
+
+.nav .links li a {
+    
+    text-decoration: none;
+    color: #fff
+}
+
+.nav .links li.active a,
+.nav .links li a:hover {color: #1abc9c}
+
+.nav .links li.active,
+.nav .links li:hover {
+    
+    border-bottom: 3px solid #1abc9c;
+    -webkit-transition: border .3s ease-in-out;
+    -moz-transition: border .3s ease-in-out;
+    -o-transition: border .3s ease-in-out;
+    transition: border .3s ease-in-out;
+    cursor: pointer
+}
+
+/* end navbar */
+
+/* start header */
+
+.header {
+    
+    background: url('../image/header.jpg');
+    position: relative
+}
+
+.header .bx-wrapper {height: 100%}
+
+.header .bx-wrapper .bx-viewport {
+    
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+
+.header .bxslider {height: 100%}
+
+.header .bxslider li {display: block}
+
+.header .bxslider li h2 {
+    
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold;
+    color: #fff
+}
+
+.header .bxslider li h2 span {color: #1abc9c}
+
+.header .bxslider li p {
+    
+    font-weight: bold;
+    color: #fff
+}
+
+/* end header */
+
+/* start services */
+
+.serv {padding: 70px 20px 35px}
+
+.serv h2 {
+    
+    margin: 0 0 50px;
+    padding-top: 15px;
+    font-weight: normal
+}
+
+.serv .item {
+    
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 20px
+}
+
+.serv .item i {
+    
+    color: #1abc9c;
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+    margin-top: 55px
+}
+
+.serv .item .info {
+    
+    float: left;
+    width: 75%
+}
+
+.serv .item .info h3 {color: #585353}
+
+.serv .item .info p {
+    
+    color: #777;
+    line-height: 1.2
+}
+
+/* end services */
+
+/* start our team */
+
+.our-team {padding: 40px 20px}
+
+.our-team .box {float: left}
+
+.our-team .box:first-child {width: 35%}
+
+.our-team .box:not(:first-child) {
+    
+    width: 15.25%;
+    margin-right: 1%;
+    position: relative
+}
+
+.our-team .box:not(:first-child) .overlay {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.5);
+    font-weight: bold;
+    color: #fff;
+    line-height: 183px;
+    text-align: center;
+    display: none
+}
+
+.our-team .box:not(:first-child):hover .overlay {display: block}
+
+.our-team .box:not(:first-child) img {width: 100%}
+
+.our-team h2 {font-weight: normal}
+
+.our-team p {
+    
+    padding-top: 25px;
+    line-height: 1.4;
+    color: #777
+}
+
+/* end our team */
+
+/* start testimonials */
+
+.testim {
+    
+    background: url('../image/11-steps-1600x1080.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff
+}
+
+.testim .t-overlay {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff
+}
+
+.testim h2 {
+    
+    margin: 40px 0 95px;
+    font-size: 40px;
+    color: #e4dddd
+}
+
+.testim q {
+    
+    font-size: 20px;
+    line-height: 2;
+    color: #d0d0d0
+}
+
+.testim p {
+    
+    font-size: 30px;
+    color: #1abc9c
+}
+
+.testim .slider > div {display: none}
+
+.testim .slider .active {display: block}
+
+/* end testimonials */
+
+/* start project */
+
+.our-project {padding: 60px 0}
+
+.our-project h2 {font-weight: normal}
+
+.our-project ul {margin-top: 50px}
+
+.our-project .shu li {cursor: pointer}
+
+.our-project ul li {
+    
+    display: inline-block;
+    border: 2px solid #b1a4a4;
+    color: #b1a4a4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px
+}
+
+.our-project ul li.active {
+    
+    background-color: #1abc9c;
+    color: #fff;
+    border: 2px solid #1abc9c
+}
+
+.our-project .gal-image {
+    
+    margin-top: 50px;
+    overflow: hidden
+}
+
+.our-project .gal-image .row > div {
+    
+    width: 32.6666%;
+    float: left;
+    margin-bottom: 12px;
+    position: relative
+}
+
+.our-project .gal-image .row > div img {width: 100%}
+
+.our-project .gal-image .row > div:nth-child(2) {
+    
+    margin-right: 1%;
+    margin-left: 1%
+}
+
+.our-project .gal-image .row > div .over {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.5);
+    font-weight: bold;
+    color: #fff;
+    line-height: 232px;
+    text-align: center;
+    display: none
+}
+
+.our-project .gal-image .row > div:hover .over {display: block}
+
+.our-project .mix {display: none}
+
+/* end project */
+
+/* start footer */
+
+.footer {
+    
+    background-color: #232323;
+    color: #777;
+    padding: 40px
+}
+
+.footer .col {
+    
+    width: 25%;
+    float: left;
+    overflow: hidden
+}
+
+.footer .col h2 {
+    
+    color: #fff;
+    font-weight: normal
+}
+
+.footer .col p {
+    
+    margin-bottom: 20px;
+    line-height: 1.6
+}
+
+.footer .col i {
+    
+    display: inline-block;
+    color: #9c9c9c;
+    border: 1px solid #9c9c9c;
+    width: 45px;
+    padding: 10px
+}
+
+.footer .tags span {
+    
+    display: inline-block;
+    color: #9c9c9c;
+    border: 1px solid #9c9c9c;
+    padding: 10px;
+    margin-right: 7px;
+    margin-bottom: 7px
+}
+
+.footer .rec div {overflow: hidden}
+
+.footer .rec div img {
+    
+    float: left;
+    margin: 5px 10px
+}
+
+.footer .rec div h4 {
+    
+    margin: 6px 0 6px;
+    color: #ccc;
+    font-weight: normal
+}
+
+.footer .blog ul li {
+    
+    padding: 15px;
+    border-bottom: 1px solid #9c9c9c;
+    color: #ccc
+}
+
+.footer .c-r {margin-top: 65px}
+
+/* end footer */
+
+/* start scroll */
+
+.sc {
+    
+    position: fixed;
+    background-color: #1abc9c;
+    width: 50px;
+    height: 50px;
+    z-index: 999999;
+    bottom: 10px;
+    right: 15px;
+    text-align: center;
+    border-radius: 30%;
+    color: #fff;
+    display: none;
+    cursor:pointer
+}
+
+/* end scroll */
+
+/* start my framework */
+
+.clearfix {clear: both}
+
+.special-heading {position: relative}
+
+.special-heading:after {
+    
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 0;
+    width: 42px;
+    border-bottom: 3px solid #333
+}
+
+.hhh {border: 2px solid #eee}
+
+/* end my framework */
